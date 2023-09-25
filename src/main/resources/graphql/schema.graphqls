@@ -1,0 +1,16 @@
+type Query{
+    findAllBrands:[Brand]
+    findOnaBrand (id: Int):Brand
+}
+type Brand{
+    id:Int
+    name: String
+    country: Country
+}
+
+enum Country {
+    AR
+    BRA
+    UR
+    COL
+}
